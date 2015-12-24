@@ -1,0 +1,3 @@
+[run]
+include = zhiliao/*
+omit = *migrations*, *tests*

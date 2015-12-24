@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<h2>欢迎进入知了英语世界!</h2>
+<p>
+    此处显示最新的页列表:
+</p>
+<ul>
+    <li><a href="/admin/">Log in to the admin interface</a></li>
+    <li><a href="http://mezzanine.jupo.org/docs/content-architecture.html">Creating custom page types</a></li>
+
+</ul>
+{% endblocktrans %}
+{% endblock %}
